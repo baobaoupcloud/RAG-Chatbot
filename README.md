@@ -1,4 +1,4 @@
-# 1. Project objectivs:
+# 1. Project objectives:
 Build a secure, maintainable and context-aware chatbot that helps authorized users quickly retrieve information about company members.
 
 # 2. Product overview:
@@ -9,7 +9,7 @@ Build a secure, maintainable and context-aware chatbot that helps authorized use
 - Telegram Group Notification. Immediately forwards the Q&A to a Telegram group
 
 # 3. Architecture:
-![architecture](https://github.com/user-attachments/assets/760ade42-bfa6-4ca1-ab24-80b549771efd)
+![architecture](./rag-chatbot-architecture.png)
 User → signs in with Cognito.
 
 User → uploads file via EC2 web app → file goes to S3 → triggers Lambda → calls Bedrock (Embeddings) → updates OpenSearch.
