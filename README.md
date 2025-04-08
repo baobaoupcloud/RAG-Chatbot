@@ -10,6 +10,7 @@ Build a secure, maintainable and context-aware chatbot that helps authorized use
 
 # 3. Architecture:
 ![architecture](./rag-chatbot-architecture.png)
+
 User → signs in with Cognito.
 
 User → uploads file via EC2 web app → file goes to S3 → triggers Lambda → calls Bedrock (Embeddings) → updates OpenSearch.
